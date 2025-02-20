@@ -36,7 +36,7 @@ def get_bank_info(bank_name):
 def main():
     # Page Styling
     st.set_page_config(page_title="Chatbot for a FinTech Company", page_icon="🏦", layout="wide")
-    
+
     st.markdown(
         """
         <style>
@@ -85,21 +85,28 @@ def main():
         """,
         unsafe_allow_html=True
     )
-    
+
     st.markdown("<div class='main-title'>💰 Chatbot for a FinTech Company 💰</div>", unsafe_allow_html=True)
-    
+
     st.write("Ask me about loans, interest rates, credit reports, and more.")
-    
-    user_input = st.text_input("You:", "", key="chat_input", help="Type your query here", on_change=lambda: st.session_state.submit_button == True)
-    
-    if st.session_state.get("submit_button", False) or st.button("Send", key="send_button", help="Click to send your query", use_container_width=True):
+
+    # Initialize session state variable
+    if "submit_button" not in st.session_state:
+        st.session_state.submit_button = False
+
+    user_input = st.text_input("You:", "", key="chat_input", help="Type your query here")
+
+    if st.button("Send", key="send_button", help="Click to send your query", use_container_width=True):
+        st.session_state.submit_button = True
+
+    if st.session_state.submit_button:
         if user_input.lower().startswith("bank info"):
             bank_name = user_input.replace("bank info", "").strip()
             response = get_bank_info(bank_name)
         else:
             prompt = f"As a FinTech expert, please provide a concise explanation: {user_input}"
             response = get_response(prompt)
-        
+
         st.markdown(f"<div class='chat-box'>{response}</div>", unsafe_allow_html=True)
 
 if __name__ == "__main__":
