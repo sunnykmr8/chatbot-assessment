@@ -47,22 +47,22 @@ def main():
             .main-title {
                 color: #2c3e50;
                 text-align: center;
-                font-size: 36px;
+                font-size: 32px;
                 font-weight: bold;
+                padding: 10px;
             }
             .chat-container {
-                background-color: white;
+                background-color: #ffffff;
                 padding: 20px;
-                border-radius: 10px;
-                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            }
-            .chat-input {
-                font-size: 18px;
+                border-radius: 8px;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+                margin: auto;
+                max-width: 600px;
             }
             .stTextArea textarea {
                 font-size: 16px;
-                background-color: #f8f9fa;
-                border-radius: 8px;
+                background-color: #eef2f3;
+                border-radius: 6px;
             }
         </style>
         """,
@@ -84,7 +84,8 @@ def main():
             prompt = f"As a FinTech expert, please provide a concise explanation: {user_input}"
             response = get_response(prompt)
         
-        st.text_area("Chatbot:", value=response, height=200, key="response_area")
+        st.markdown(f"<div style='background-color: #eef2f3; padding: 10px; border-radius: 6px;'>{response}</div>", unsafe_allow_html=True)
+    
     st.markdown("</div>", unsafe_allow_html=True)
 
 if __name__ == "__main__":
