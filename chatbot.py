@@ -24,7 +24,7 @@ def get_response(prompt):
         return f"An error occurred: {e}"
 
 def main():
-    st.title("Google GenAI-powered Fintech Chatbot")
+    st.title("Chatbot for a FinTech Company")
     st.write("You can ask me about loans, interest rates, credit reports, and more.")
 
     user_input = st.text_input("You:", "")
