@@ -65,6 +65,7 @@ def main():
                 border-radius: 8px;
                 margin-top: 10px;
                 font-size: 16px;
+                color: #000000;
             }
             .stTextArea textarea {
                 font-size: 16px;
