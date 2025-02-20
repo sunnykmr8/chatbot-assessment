@@ -47,22 +47,38 @@ def main():
             .main-title {
                 color: #2c3e50;
                 text-align: center;
-                font-size: 32px;
+                font-size: 36px;
                 font-weight: bold;
                 padding: 10px;
             }
             .chat-container {
-                background-color: black;
+                background-color: #ffffff;
                 padding: 20px;
-                border-radius: 8px;
-                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
                 margin: auto;
-                max-width: 600px;
+                max-width: 700px;
+            }
+            .chat-box {
+                background-color: #f8f9fa;
+                padding: 15px;
+                border-radius: 8px;
+                margin-top: 10px;
+                font-size: 16px;
             }
             .stTextArea textarea {
                 font-size: 16px;
-                background-color: white;
+                background-color: #eef2f3;
                 border-radius: 6px;
+                border: 1px solid #ccc;
+            }
+            .send-button {
+                background-color: #007bff !important;
+                color: white !important;
+                font-size: 16px !important;
+                padding: 8px 15px !important;
+                border-radius: 6px !important;
+                text-align: center;
             }
         </style>
         """,
@@ -76,7 +92,7 @@ def main():
     st.markdown("<div class='chat-container'>", unsafe_allow_html=True)
     user_input = st.text_input("You:", "", key="chat_input", help="Type your query here")
     
-    if st.button("Send", key="send_button"):
+    if st.button("Send", key="send_button", help="Click to send your query", use_container_width=True):
         if user_input.lower().startswith("bank info"):
             bank_name = user_input.replace("bank info", "").strip()
             response = get_bank_info(bank_name)
@@ -84,7 +100,7 @@ def main():
             prompt = f"As a FinTech expert, please provide a concise explanation: {user_input}"
             response = get_response(prompt)
         
-        st.markdown(f"<div style='background-color: #eef2f3; padding: 10px; border-radius: 6px;'>{response}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div class='chat-box'>{response}</div>", unsafe_allow_html=True)
     
     st.markdown("</div>", unsafe_allow_html=True)
 
