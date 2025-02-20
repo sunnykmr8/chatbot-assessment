@@ -88,7 +88,7 @@ def main():
     
     st.markdown("<div class='main-title'>💰 Chatbot for a FinTech Company 💰</div>", unsafe_allow_html=True)
     
-    st.markdown("<p style='text-align: center; font-size: 18px;'>Ask me about loans, interest rates, credit reports, and more.</p>", unsafe_allow_html=True)
+    st.write("Ask me about loans, interest rates, credit reports, and more.")
     
     st.markdown("<div class='chat-container'>", unsafe_allow_html=True)
     user_input = st.text_input("You:", "", key="chat_input", help="Type your query here")
