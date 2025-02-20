@@ -86,7 +86,7 @@ def main():
         unsafe_allow_html=True
     )
     
-    st.markdown("<div class='main-title'>💰 FinTech Chatbot 💰</div>", unsafe_allow_html=True)
+    st.markdown("<div class='main-title'>💰 Chatbot for a FinTech Company 💰</div>", unsafe_allow_html=True)
     
     st.write("Ask me about loans, interest rates, credit reports, and more.")
     
