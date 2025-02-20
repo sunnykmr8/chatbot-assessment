@@ -1,0 +1,201 @@
+{
+  "banks": [
+    {
+      "name": "State Bank of India (SBI)",
+      "interest_rates": {
+        "savings_account": "Data not available",
+        "fixed_deposit": "Data not available"
+      },
+      "loan_products": {
+        "personal_loan": {
+          "interest_rate": "11.15% – 15.30% per annum",
+          "eligibility": "Applicants with a credit score of 750 and above are usually considered for personal loans and may be offered lower interest rates."
+        },
+        "home_loan": {
+          "interest_rate": "9.15% – 9.75% per annum",
+          "eligibility": "Interest rates vary based on the borrower's CIBIL score."
+        },
+        "used_car_loan": {
+          "interest_rate": "Varies based on credit score",
+          "eligibility": "Applicants with higher credit scores may receive more favorable interest rates."
+        }
+      }
+    },
+    {
+      "name": "ICICI Bank",
+      "interest_rates": {
+        "savings_account": "Data not available",
+        "fixed_deposit": "Data not available"
+      },
+      "loan_products": {
+        "personal_loan": {
+          "interest_rate": "10.65% onwards",
+          "eligibility": "Applicants with a credit score of 750 and above are usually considered for personal loans and may be offered lower interest rates."
+        },
+        "home_loan": {
+          "interest_rate": "9.40% – 10.05% per annum",
+          "eligibility": "Interest rates vary based on the borrower's CIBIL score and employment type."
+        },
+        "used_car_loan": {
+          "interest_rate": "Varies based on credit score",
+          "eligibility": "Applicants with higher credit scores may receive more favorable interest rates."
+        }
+      }
+    },
+    {
+      "name": "HDFC Bank",
+      "interest_rates": {
+        "savings_account": "Data not available",
+        "fixed_deposit": "Data not available"
+      },
+      "loan_products": {
+        "personal_loan": {
+          "interest_rate": "10.50% onwards",
+          "eligibility": "Applicants with a credit score of 750 and above are usually considered for personal loans and may be offered lower interest rates."
+        },
+        "home_loan": {
+          "interest_rate": "9.40% – 9.95% per annum",
+          "eligibility": "Applicants with a CIBIL score of 780 and above may avail home loans at an interest rate of 8.75% per annum."
+        }
+      }
+    },
+    {
+      "name": "Punjab National Bank (PNB)",
+      "interest_rates": {
+        "savings_account": "Data not available",
+        "fixed_deposit": "Data not available"
+      },
+      "loan_products": {
+        "personal_loan": {
+          "interest_rate": "10.40% – 17.95% per annum",
+          "eligibility": "Applicants with a credit score of 750 and above are usually considered for personal loans and may be offered lower interest rates."
+        },
+        "home_loan": {
+          "interest_rate": "9.40% – 11.60% per annum",
+          "eligibility": "Interest rates vary based on the borrower's CIBIL score, loan amount, and tenure."
+        },
+        "used_car_loan": {
+          "interest_rate": "Varies based on credit score",
+          "eligibility": "Applicants with higher credit scores may receive more favorable interest rates."
+        }
+      }
+    },
+    {
+      "name": "Kotak Mahindra Bank",
+      "interest_rates": {
+        "savings_account": "Data not available",
+        "fixed_deposit": "Data not available"
+      },
+      "loan_products": {
+        "personal_loan": {
+          "interest_rate": "10.50% – 16.99% per annum",
+          "loan_amount": "₹50,000 to ₹15 lakh",
+          "tenure": "1 to 5 years",
+          "processing_fee": "Up to 2.5% of the loan amount",
+          "eligibility": "Minimum monthly salary of ₹20,000"
+        }
+      }
+    },
+    {
+      "name": "Axis Bank",
+      "interest_rates": {
+        "savings_account": "Data not available",
+        "fixed_deposit": "Data not available"
+      },
+      "loan_products": {
+        "personal_loan": {
+          "interest_rate": "11.25% per annum onwards",
+          "processing_fee": "Up to 2% of the loan amount"
+        }
+      }
+    },
+    {
+      "name": "IndusInd Bank",
+      "interest_rates": {
+        "savings_account": "Data not available",
+        "fixed_deposit": "Data not available"
+      },
+      "loan_products": {
+        "personal_loan": {
+          "interest_rate": "10.49% per annum onwards",
+          "loan_amount": "Up to ₹50 lakh",
+          "tenure": "1 to 5 years",
+          "minimum_monthly_salary": "₹25,000",
+          "processing_fee": "Up to 4% of the loan amount"
+        }
+      }
+    },
+    {
+      "name": "Bank of Baroda",
+      "interest_rates": {
+        "savings_account": "Data not available",
+        "fixed_deposit": "Data not available"
+      },
+      "loan_products": {
+        "personal_loan": {
+          "interest_rate": "11.15% – 18.75% per annum",
+          "processing_fee": "Up to 2% of the loan amount (minimum ₹1,000 and maximum ₹10,000)"
+        }
+      }
+    },
+    {
+      "name": "Union Bank of India",
+      "interest_rates": {
+        "savings_account": "Data not available",
+        "fixed_deposit": "Data not available"
+      },
+      "loan_products": {
+        "personal_loan": {
+          "interest_rate": "11.35% per annum onwards",
+          "loan_amount": "Up to ₹15 lakh",
+          "tenure": "Up to 5 years"
+        }
+      }
+    },
+    {
+      "name": "Canara Bank",
+      "interest_rates": {
+        "savings_account": "Data not available",
+        "fixed_deposit": "Data not available"
+      },
+      "loan_products": {
+        "personal_loan": {
+          "interest_rate": "10.95% – 16.40% per annum",
+          "processing_fee": "0.50% of the loan amount (maximum ₹2,500)"
+        }
+      }
+    }
+  ],
+  "credit_score": {
+    "description": "A three-digit numeric summary of your credit history, ranging from 300 to 900. The closer your score is to 900, the better your credit rating.",
+    "providers": [
+      {
+        "name": "TransUnion CIBIL",
+        "website": "https://www.cibil.com/"
+      },
+      {
+        "name": "Experian",
+        "website": "https://www.experian.in/"
+      },
+      {
+        "name": "Equifax",
+        "website": "https://www.equifax.co.in/"
+      },
+      {
+        "name": "CRIF High Mark",
+        "website": "https://www.crifhighmark.com/"
+      }
+    ],
+    "how_to_check": [
+      {
+        "method": "Visit the official website of any credit bureau and request your credit report.",
+        "note": "Checking your own credit score does not impact it."
+      },
+      {
+        "method": "Use financial services platforms like Paisabazaar to check your CIBIL score for free.",
+        "website": "https://www.paisabazaar.com/cibil-credit-report/"
+      }
+    ]
+  }
+}
+
