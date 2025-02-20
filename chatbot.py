@@ -88,7 +88,7 @@ def main():
 
     st.markdown("<div class='main-title'>💰 Chatbot for a FinTech Company 💰</div>", unsafe_allow_html=True)
 
-    st.write("Ask me about loans, interest rates, credit reports, and more.")
+    st.write("Ask me about loans, Interest rates, Credit reports, Bredit Reports, CIBIL and more.")
 
     # Initialize session state variable
     if "submit_button" not in st.session_state:
