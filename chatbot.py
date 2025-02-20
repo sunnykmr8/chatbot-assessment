@@ -90,7 +90,6 @@ def main():
     
     st.write("Ask me about loans, interest rates, credit reports, and more.")
     
-    st.markdown("<div class='chat-container'>", unsafe_allow_html=True)
     user_input = st.text_input("You:", "", key="chat_input", help="Type your query here")
     
     if st.button("Send", key="send_button", help="Click to send your query", use_container_width=True):
@@ -102,8 +101,6 @@ def main():
             response = get_response(prompt)
         
         st.markdown(f"<div class='chat-box'>{response}</div>", unsafe_allow_html=True)
-    
-    st.markdown("</div>", unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
