@@ -90,9 +90,9 @@ def main():
     
     st.write("Ask me about loans, interest rates, credit reports, and more.")
     
-    user_input = st.text_input("You:", "", key="chat_input", help="Type your query here")
+    user_input = st.text_input("You:", "", key="chat_input", help="Type your query here", on_change=lambda: st.session_state.submit_button == True)
     
-    if st.button("Send", key="send_button", help="Click to send your query", use_container_width=True):
+    if st.session_state.get("submit_button", False) or st.button("Send", key="send_button", help="Click to send your query", use_container_width=True):
         if user_input.lower().startswith("bank info"):
             bank_name = user_input.replace("bank info", "").strip()
             response = get_bank_info(bank_name)
