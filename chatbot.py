@@ -52,7 +52,7 @@ def main():
                 padding: 10px;
             }
             .chat-container {
-                background-color: #ffffff;
+                background-color: black;
                 padding: 20px;
                 border-radius: 8px;
                 box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
@@ -61,7 +61,7 @@ def main():
             }
             .stTextArea textarea {
                 font-size: 16px;
-                background-color: #eef2f3;
+                background-color: white;
                 border-radius: 6px;
             }
         </style>
