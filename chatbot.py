@@ -35,7 +35,7 @@ def get_bank_info(bank_name):
 
 def main():
     # Page Styling
-    st.set_page_config(page_title="Chatbot for a FinTech Company", page_icon="🏦", layout="wide")
+    st.set_page_config(page_title="FinTech Chatbot", page_icon="🏦", layout="wide")
 
     st.markdown(
         """
