@@ -26,7 +26,7 @@ def get_response(prompt):
         # Return the generated text
         return response.text if hasattr(response, "text") else "No response generated."
     except Exception as e:
-        return f"An error occurred: {e}"
+        return "Bank not found."
 
 def get_bank_info(bank_name):
     for bank in json_data["banks"]:
